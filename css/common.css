@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* header */
+#header {
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+#header .top_menu {
+    background: #f3f3f3;
+    text-align: right;
+    color: #999;
+    font-size: 12px;
+    transition: all 0.4s;
+}
+#header .top_menu a {
+    padding: 7px 20px;
+    display: inline-block;
+    border-right: 1px solid #e3e3e3;
+}
+#header .top_menu .first {
+    border-left: 1px solid #e3e3e3;
+}
+#header .top_menu a:hover {
+    color: #dbb075;
+}
+
+#header .top_menu .row{
+    position: relative;
+}
+
+/* 검색창(.search) */
+
+#header .search {
+    position: absolute;
+    right: 320px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#header .search #sbox {
+    width: 169px;
+    border: none;
+    outline: none;
+    text-indent: 1em;
+}
+#header .search label:hover {
+    cursor: pointer;
+    color: #dbb075;
+}
+
+
+/* 로고와 네비게이션 */
+
+#header > .row {
+    position: relative;
+}
+#header h1 {
+    padding: 25px 0;
+}
+#header #nav {
+    float: right;
+    font-size: 18px;
+    color: #1e1e1e;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 9;
+}
+#header #nav .depth1 > li {
+    float: right;
+    position: relative;
+}
+#header #nav .depth1 > li > a {
+    display: block;
+    padding: 20px 40px;
+}
+#header #nav .depth1 > li:hover > a {
+    color: #00529b;
+}
+#header .row {
+    display: block;
+}
+#header .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    color: #fff;
+    background: #555;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+#header .depth2 a {
+    display: block;
+    padding: 18px 0 ;
+    border-bottom: 1px solid#999;
+    transition: all 0.5s;
+}
+#header .depth2 li:hover a {
+    background: #00529b;
+    color: #dfe9fe;
+}
+
+#header .depth2>li:last-child > a {
+    border-bottom: none;
+}
+
+#header #nav .depth1 > li:hover > .depth2 {
+    display: block;
+}
+
+
+#footer {
+    background: #333;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ddd;
+}
+
+#footer .sns a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0 5px ;
+    transition: all 0.3s;
+}
+#footer .sns a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+#footer .info {
+    padding: 5px 20px;
+}
+#footer .info span {
+    padding: 5px 20px;
+}
+
+
+#footer .privacy > a, 
+#footer .privacy > .fam {
+    font-size: 11px;
+    padding: 3px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #bbb;
+    cursor: pointer;
+    display: inline-block;
+}
+#footer .privacy > a:hover,
+#footer .privacy > .fam:hover {
+    background: #999;
+    border: 1px solid #999;
+    color: #fff;
+}
+
+#footer .privacy > .fam {
+    position: relative;
+}
+#footer .privacy > .fam ul {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+    display: none;
+} 
+#footer .privacy > .fam:hover ul {
+    display: block;
+}
+
